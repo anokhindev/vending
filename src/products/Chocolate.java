@@ -4,8 +4,8 @@ import interfaces.IEdible;
 import interfaces.IPackaged;
 
 public class Chocolate extends Product implements IPackaged, IEdible {
-    public Chocolate(String  name, int price, int number) {
-        super(name, price,  number);
+    public Chocolate(String  name, int price) {
+        super(name, price);
     }
 
     @Override

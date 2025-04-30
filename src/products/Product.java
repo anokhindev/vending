@@ -5,10 +5,9 @@ public abstract class Product {
     protected int price;
     protected int number;
 
-    public Product(String name, int price, int number) {
+    public Product(String name, int price) {
         this.name = name;
         this.price = price;
-        this.number = number;
     }
 
     public String getName() {

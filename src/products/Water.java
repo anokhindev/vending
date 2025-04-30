@@ -5,9 +5,11 @@ import interfaces.IEdible;
 import interfaces.IRefrigerated;
 
 public class Water extends Product implements IDrinkable, IRefrigerated, IEdible {
-    public Water(String name, int price, int number) {
-        super(name, price, number);
+    public Water(String name, int price) {
+        super(name, price);
     }
+
+    public boolean isRefrigerated = true;
 
 
     @Override
@@ -22,6 +24,6 @@ public class Water extends Product implements IDrinkable, IRefrigerated, IEdible
 
     @Override
     public boolean requiresRefrigeration() {
-        return true;
+        return isRefrigerated;
     }
 }
