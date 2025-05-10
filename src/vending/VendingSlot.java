@@ -5,23 +5,21 @@ import products.Product;
 public class VendingSlot {
     private final Product product;
     private int quantity;
-    private final int slotId;
+    private final String slotId;
 
-    public VendingSlot(int slotId, Product product, int quantity) {
+    public VendingSlot(String slotId, Product product, int quantity) {
         this.slotId = slotId;
         this.product = product;
         this.quantity = Math.min(quantity, 10);
     }
 
-    public int getSlotId() { return slotId; }
     public Product getProduct() { return product; }
-    public int getQuantity() { return quantity; }
 
     public boolean isAvailable() {
         return quantity > 0;
     }
 
-    public boolean dispense() {
+    public boolean removeProduct() {
         if (quantity > 0) {
             quantity--;
             return true;
@@ -30,6 +28,6 @@ public class VendingSlot {
     }
 
     public String getSlotStatus() {
-        return "[" + slotId + "] " + product + " x" + quantity;
+        return "[" + slotId + "] " + product.getName() + " x" + quantity;
     }
 }
