@@ -9,12 +9,12 @@ import transaction.VendingTransactionProcessor;
 import java.util.Scanner;
 
 public class VendingRunner {
-    private final VendorShop shop;
+    private final VendingShop shop;
     private final Equiring equiring;
     private final VendingTransactionProcessor processor;
     private final TransactionLog log;
 
-    public VendingRunner(VendorShop shop) {
+    public VendingRunner(VendingShop shop) {
         this.shop = shop;
         this.equiring = new Equiring(shop);
         this.processor = new VendingTransactionProcessor(shop);

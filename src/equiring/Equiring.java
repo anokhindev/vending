@@ -1,13 +1,13 @@
 package equiring;
 
 import vending.VendingSlot;
-import vending.VendorShop;
+import vending.VendingShop;
 import person.Person;
 
 public class Equiring {
-    private final VendorShop shop;
+    private final VendingShop shop;
 
-    public Equiring(VendorShop shop) {
+    public Equiring(VendingShop shop) {
         this.shop = shop;
     }
 

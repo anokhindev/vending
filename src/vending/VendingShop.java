@@ -7,10 +7,10 @@ import products.Water;
 import java.util.ArrayList;
 import java.util.*;
 
-public class VendorShop {
+public class VendingShop {
     private Map<String, VendingSlot> slots;
 
-    public VendorShop() {
+    public VendingShop() {
         this.slots = new HashMap<>();
         initialization(); // теперь только ручное заполнение
     }

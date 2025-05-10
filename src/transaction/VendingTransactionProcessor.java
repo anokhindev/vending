@@ -3,12 +3,12 @@ package transaction;
 import person.Person;
 import products.Product;
 import vending.VendingSlot;
-import vending.VendorShop;
+import vending.VendingShop;
 
 public class VendingTransactionProcessor {
-    private final VendorShop shop;
+    private final VendingShop shop;
 
-    public VendingTransactionProcessor(VendorShop shop) {
+    public VendingTransactionProcessor(VendingShop shop) {
         this.shop = shop;
     }
 
